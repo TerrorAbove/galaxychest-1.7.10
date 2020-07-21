@@ -1,0 +1,97 @@
+---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 12/15/17 11:55 PM
+Description: Unexpected error
+
+java.lang.ClassCastException: com.terrorAndBlue.galaxyChest.block.BlockGalaxyChest cannot be cast to net.minecraft.block.BlockFence
+	at net.minecraft.client.renderer.RenderBlocks.renderBlockByRenderType(RenderBlocks.java:355)
+	at net.minecraft.client.renderer.WorldRenderer.updateRenderer(WorldRenderer.java:207)
+	at net.minecraft.client.renderer.RenderGlobal.updateRenderers(RenderGlobal.java:1618)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1263)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1056)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.client.renderer.RenderBlocks.renderBlockByRenderType(RenderBlocks.java:355)
+	at net.minecraft.client.renderer.WorldRenderer.updateRenderer(WorldRenderer.java:207)
+	at net.minecraft.client.renderer.RenderGlobal.updateRenderers(RenderGlobal.java:1618)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1263)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player883'/468, l='MpServer', x=245.98, y=73.62, z=233.39]]
+	Chunk stats: MultiplayerChunkCache: 10, 10
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (240,64,228), Chunk: (at 0,4,4 in 15,14; contains blocks 240,0,224 to 255,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 128057 game time, 1626 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 23 total; [EntityBat['Bat'/260, l='MpServer', x=259.66, y=54.09, z=213.75], EntityBat['Bat'/261, l='MpServer', x=262.59, y=54.09, z=214.75], EntitySquid['Squid'/262, l='MpServer', x=268.50, y=56.34, z=223.50], EntitySquid['Squid'/263, l='MpServer', x=268.50, y=56.00, z=223.50], EntitySpider['Spider'/264, l='MpServer', x=257.44, y=65.00, z=210.00], EntitySpider['Spider'/265, l='MpServer', x=258.50, y=44.00, z=224.50], EntitySpider['Spider'/266, l='MpServer', x=257.03, y=44.00, z=230.28], EntityClientPlayerMP['Player883'/468, l='MpServer', x=245.98, y=73.62, z=233.39], EntityEnderman['Enderman'/267, l='MpServer', x=257.53, y=44.00, z=227.91], EntitySquid['Squid'/268, l='MpServer', x=263.63, y=58.00, z=228.50], EntitySquid['Squid'/269, l='MpServer', x=264.50, y=58.00, z=225.97], EntitySquid['Squid'/270, l='MpServer', x=262.50, y=58.00, z=229.50], EntityCreeper['Creeper'/239, l='MpServer', x=240.31, y=44.16, z=228.69], EntitySquid['Squid'/271, l='MpServer', x=268.50, y=56.34, z=224.50], EntitySpider['Spider'/240, l='MpServer', x=250.28, y=44.00, z=229.72], EntityBat['Bat'/241, l='MpServer', x=248.09, y=45.09, z=230.38], EntityCreeper['Creeper'/242, l='MpServer', x=241.16, y=44.19, z=228.31], EntityBat['Bat'/243, l='MpServer', x=253.88, y=45.09, z=228.25], EntityZombie['Zombie'/244, l='MpServer', x=241.31, y=45.09, z=229.13], EntityBat['Bat'/245, l='MpServer', x=253.72, y=46.09, z=224.75], EntityMinecartChest['entity.MinecartChest.name'/218, l='MpServer', x=231.50, y=41.50, z=218.09], EntityCreeper['Creeper'/219, l='MpServer', x=225.50, y=40.00, z=232.50], EntitySlime['Slime'/220, l='MpServer', x=233.38, y=11.00, z=245.63]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2555)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:980)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_91, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 391765208 bytes (373 MB) / 547356672 bytes (522 MB) up to 1890582528 bytes (1803 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.85.1230 Minecraft Forge 10.13.2.1230 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1230} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1230} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	GalaxyChest{0.0.0.0} [Galaxy Chest] (modid-1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) HD Graphics 4600 GL version 4.3.0 - Build 20.19.15.4624, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

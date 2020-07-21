@@ -1,0 +1,28 @@
+[21:12:27] [main/INFO]: Setting user: Player414
+[21:12:28] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:12:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Galaxy Chest
+[21:12:34] [Sound Library Loader/INFO]: Sound engine started
+[21:12:38] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:12:38] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:12:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Galaxy Chest
+[21:12:38] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[21:12:39] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
+[21:12:39] [Sound Library Loader/INFO]: Sound engine started
+[21:13:02] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:13:02] [Server thread/INFO]: Generating keypair
+[21:13:02] [Server thread/INFO]: Preparing start region for level 0
+[21:13:03] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:13:04] [Server thread/INFO]: Player414[local:E:19bd4894] logged in with entity id 205 at (249.48779813535066, 72.0, 222.32296551111904)
+[21:13:04] [Server thread/INFO]: Player414 joined the game
+[21:14:13] [Client thread/INFO]: [CHAT] The chest won't open. Perhaps you need to activate it somehow...
+[21:14:15] [Server thread/INFO]: Saving and pausing game...
+[21:14:15] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:14:15] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:14:15] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:14:16] [Server thread/INFO]: Stopping server
+[21:14:16] [Server thread/INFO]: Saving players
+[21:14:16] [Server thread/INFO]: Saving worlds
+[21:14:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:14:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:14:16] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:14:17] [Client thread/INFO]: Stopping!

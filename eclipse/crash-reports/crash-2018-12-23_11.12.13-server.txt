@@ -1,0 +1,78 @@
+---- Minecraft Crash Report ----
+// Ouch. That hurt :(
+
+Time: 12/23/18 11:12 AM
+Description: Ticking memory connection
+
+java.lang.ClassCastException: com.terrorAndBlue.galaxyChest.tileEntity.TileEntityGalaxyChest cannot be cast to net.minecraft.tileentity.TileEntityChest
+	at net.minecraft.block.BlockChest.breakBlock(BlockChest.java:368)
+	at net.minecraft.world.chunk.Chunk.func_150807_a(Chunk.java:658)
+	at net.minecraft.world.World.setBlock(World.java:519)
+	at net.minecraft.world.World.setBlockToAir(World.java:651)
+	at net.minecraft.block.Block.removedByPlayer(Block.java:1670)
+	at net.minecraft.block.Block.removedByPlayer(Block.java:1664)
+	at net.minecraft.server.management.ItemInWorldManager.removeBlock(ItemInWorldManager.java:270)
+	at net.minecraft.server.management.ItemInWorldManager.tryHarvestBlock(ItemInWorldManager.java:322)
+	at net.minecraft.server.management.ItemInWorldManager.uncheckedTryHarvestBlock(ItemInWorldManager.java:234)
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerDigging(NetHandlerPlayServer.java:532)
+	at net.minecraft.network.play.client.C07PacketPlayerDigging.processPacket(C07PacketPlayerDigging.java:61)
+	at net.minecraft.network.play.client.C07PacketPlayerDigging.processPacket(C07PacketPlayerDigging.java:94)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.block.BlockChest.breakBlock(BlockChest.java:368)
+	at net.minecraft.world.chunk.Chunk.func_150807_a(Chunk.java:658)
+	at net.minecraft.world.World.setBlock(World.java:519)
+	at net.minecraft.world.World.setBlockToAir(World.java:651)
+	at net.minecraft.block.Block.removedByPlayer(Block.java:1670)
+	at net.minecraft.block.Block.removedByPlayer(Block.java:1664)
+	at net.minecraft.server.management.ItemInWorldManager.removeBlock(ItemInWorldManager.java:270)
+	at net.minecraft.server.management.ItemInWorldManager.tryHarvestBlock(ItemInWorldManager.java:322)
+	at net.minecraft.server.management.ItemInWorldManager.uncheckedTryHarvestBlock(ItemInWorldManager.java:234)
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerDigging(NetHandlerPlayServer.java:532)
+	at net.minecraft.network.play.client.C07PacketPlayerDigging.processPacket(C07PacketPlayerDigging.java:61)
+	at net.minecraft.network.play.client.C07PacketPlayerDigging.processPacket(C07PacketPlayerDigging.java:94)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@b499154
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_91, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 93405744 bytes (89 MB) / 591921152 bytes (564 MB) up to 1890582528 bytes (1803 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP v9.05 FML v7.10.85.1230 Minecraft Forge 10.13.2.1230 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1230} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1230} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	GalaxyChest{0.0.0.0} [Galaxy Chest] (modid-1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Player763'/364, l='New World', x=246.36, y=72.00, z=232.44]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

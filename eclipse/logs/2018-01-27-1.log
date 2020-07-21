@@ -1,0 +1,32 @@
+[23:56:06] [main/INFO]: Setting user: Player165
+[23:56:08] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:56:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Galaxy Chest
+[23:56:14] [Sound Library Loader/INFO]: Sound engine started
+[23:56:18] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:56:18] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:56:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Galaxy Chest
+[23:56:19] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[23:56:19] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:56:19] [Sound Library Loader/INFO]: Sound engine started
+[23:57:14] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[23:57:14] [Server thread/INFO]: Generating keypair
+[23:57:15] [Server thread/INFO]: Preparing start region for level 0
+[23:57:16] [Server thread/INFO]: Changing view distance to 12, from 10
+[23:57:17] [Server thread/INFO]: Player165[local:E:e6a823b7] logged in with entity id 368 at (248.54642043953675, 72.0, 231.50368944003833)
+[23:57:17] [Server thread/INFO]: Player165 joined the game
+[23:57:21] [Server thread/INFO]: Saving and pausing game...
+[23:57:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:57:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:57:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:59:03] [Server thread/INFO]: Saving and pausing game...
+[23:59:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:59:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:59:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:59:04] [Server thread/INFO]: Stopping server
+[23:59:04] [Server thread/INFO]: Saving players
+[23:59:04] [Server thread/INFO]: Saving worlds
+[23:59:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:59:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:59:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:59:05] [Client thread/INFO]: Stopping!
+[02:52:51] [main/INFO]: Setting user: Player562
